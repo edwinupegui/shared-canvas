@@ -1,7 +1,7 @@
 {
   "rewrites": [
     {
-      "source": "/room/:roomId",
+      "source": "/:roomId",
       "destination": "/[roomId].tsx"
     }
   ]
