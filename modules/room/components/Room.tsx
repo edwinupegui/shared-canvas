@@ -1,6 +1,5 @@
 import { useRoom } from "@/common/recoil/room";
 
-import RoomContextProvider from "../context/Room.context";
 import Canvas from "./board/Canvas";
 import MousePosition from "./board/MousePosition";
 import MousesRenderer from "./board/MousesRenderer";
@@ -10,6 +9,7 @@ import Chat from "./chat/Chat";
 import NameInput from "./NameInput";
 import ToolBar from "./toolbar/ToolBar";
 import UserList from "./UserList";
+import RoomContextProvider from "../context/Room.context";
 
 const Room = () => {
   const room = useRoom();
