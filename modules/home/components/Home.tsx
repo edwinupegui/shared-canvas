@@ -68,7 +68,7 @@ const Home = () => {
 
       <div className="mt-10 flex flex-col gap-2">
         <label className="self-start font-bold leading-tight">
-          Enter your name
+          Enter your nickname
         </label>
         <input
           className="input"
