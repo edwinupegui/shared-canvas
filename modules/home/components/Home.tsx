@@ -63,15 +63,15 @@ const Home = () => {
   };
 
   return (
-    <div className="flex h-screen flex-col items-center justify-start bg-surface">
+    <div className="relative flex h-screen flex-col items-center justify-center bg-surface">
       <div className="flex flex-col items-center justify-center">
         <h1 className="visually-hidden">Shared Canvas</h1>
-        <video width="610" height="500" autoPlay muted>
+        <video width="430" height="300" autoPlay muted>
           <source src="/video/shared-canvas.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="bottom-[13.25rem] ml-[-0.5px] rounded-3xl border-x-[7px] border-b-[7px] border-secondary md:absolute">
-        <div className="h-full w-full rounded-b-3xl rounded-t-xl border-x-[6px] border-b-[6px] border-surface bg-white md:h-[20rem] md:w-[417.5px] md:rounded-t-none">
+      <div className="relative bottom-10 ml-[1px] rounded-3xl border-x-[7px] border-b-[7px] border-secondary">
+        <div className="h-full w-full rounded-b-3xl rounded-t-xl border-x-[3px] border-b-[3px] border-surface bg-white md:h-[20rem] md:w-[416px] md:rounded-t-none">
           <div
             className={clsx(
               "flex h-full w-full",
