@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 * {
-  @apply font-montserrat font-medium focus:outline-none focus:ring focus:ring-red-500;
+  @apply font-montserrat font-medium;
 }
 
 @layer components {
@@ -23,6 +23,17 @@
     overflow-y: scroll;
     overflow-y: overlay;
   }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .drag {
