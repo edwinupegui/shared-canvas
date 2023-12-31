@@ -1,0 +1,38 @@
+{
+  "name": "Shared Canvas",
+  "short_name": "Shared Canvas",
+  "description": "White Board",
+  "theme_color": "#3700B3",
+  "background_color": "#121212",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "scope": "/",
+  "start_url": "/",
+  "splash_pages": null,
+  "icons": [
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "shared-canvas-logo.png",
+      "sizes": "512x512"
+    }
+  ]
+}
