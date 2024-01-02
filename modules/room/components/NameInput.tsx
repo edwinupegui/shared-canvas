@@ -1,5 +1,6 @@
 import { FormEvent, useEffect, useState } from "react";
 
+import { Button, Input } from "@nextui-org/react";
 import { useRouter } from "next/router";
 
 import { socket } from "@/common/lib/socket";
@@ -55,32 +56,36 @@ const NameInput = () => {
   };
 
   return (
-    <form
-      className="my-24 flex flex-col items-center"
-      onSubmit={handleJoinRoom}
-    >
-      <h1 className="text-5xl font-extrabold leading-tight sm:text-extra">
-        Collabio
-      </h1>
-      <h3 className="text-xl sm:text-2xl">Real-time whiteboard</h3>
-
-      <div className="mt-10 mb-3 flex flex-col gap-2">
-        <label className="self-start font-bold leading-tight">
-          Enter your name
-        </label>
-        <input
-          className="rounded-xl border p-5 py-1"
-          id="room-id"
-          placeholder="Username..."
-          value={name}
-          onChange={(e) => setName(e.target.value.slice(0, 15))}
-        />
+    <div className="relative flex h-screen flex-col items-center justify-center bg-surface">
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="visually-hidden">Shared Canvas</h1>
+        <video width="430" height="300" autoPlay muted>
+          <source src="/video/shared-canvas.mp4" type="video/mp4" />
+        </video>
       </div>
-
-      <button className="btn" type="submit">
-        Enter room
-      </button>
-    </form>
+      <div className="relative bottom-4 w-full rounded-3xl border-x-[7px] border-b-[7px] border-secondary sm:w-auto md:bottom-10">
+        <div className="h-full w-full rounded-b-3xl border-x-[3px] border-b-[3px] border-surface bg-white sm:w-[416px] md:h-[20rem] md:rounded-t-none">
+          <div className={"flex h-full w-full items-center justify-center"}>
+            <form className="" onSubmit={handleJoinRoom}>
+              <div className="flex w-full flex-col gap-5 p-8 md:min-w-[300px]">
+                <Input
+                  variant="faded"
+                  label="Enter your nickname"
+                  id="room-id"
+                  value={name}
+                  onChange={(e) => setName(e.target.value.slice(0, 15))}
+                />
+                <div className="flex flex-wrap items-center justify-center gap-4">
+                  <Button color="secondary" type="submit">
+                    Enter room
+                  </Button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 };
 

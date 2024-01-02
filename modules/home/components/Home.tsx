@@ -70,8 +70,8 @@ const Home = () => {
           <source src="/video/shared-canvas.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="relative rounded-3xl border-x-[7px] border-b-[7px] border-secondary md:bottom-10">
-        <div className="h-full w-full rounded-b-3xl border-x-[3px] border-b-[3px] border-surface bg-white md:h-[20rem] md:w-[416px] md:rounded-t-none">
+      <div className="relative bottom-4 w-full rounded-3xl border-x-[7px] border-b-[7px] border-secondary sm:w-auto md:bottom-10">
+        <div className="h-full w-full rounded-b-3xl border-x-[3px] border-b-[3px] border-surface bg-white sm:w-[416px] md:h-[20rem] md:rounded-t-none">
           <div
             className={clsx(
               "flex h-full w-full",
