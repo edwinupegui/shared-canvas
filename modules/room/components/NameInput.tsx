@@ -77,7 +77,7 @@ const NameInput = () => {
                 />
                 <div className="flex flex-wrap items-center justify-center gap-4">
                   <Button color="secondary" type="submit">
-                    Enter Room
+                    Enter room
                   </Button>
                 </div>
               </div>
